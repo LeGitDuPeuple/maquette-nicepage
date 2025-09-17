@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   list-style: none;
-  font-family: Robotof;
+
 }
 
 body {
-    min-height: 100vh;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
