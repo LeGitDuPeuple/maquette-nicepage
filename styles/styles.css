@@ -66,4 +66,94 @@ nav .nav-btn button {
 nav .nav-btn button:hover {
   color: #fff;
   background: #000;
+}
+
+.section1 {
+  min-height: 700px;
+  background: #161616;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section1 .section1-container {
+  display: flex;
+}
+.section1 .section1-container .section1-left {
+  margin: 20px;
+}
+.section1 .section1-container .section1-left h1 {
+  font-size: 5rem;
+  animation: moveBoxLeft 2s ease forwards;
+  opacity: 0;
+  color: whitesmoke;
+}
+.section1 .section1-container .section1-right {
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 20px;
+  flex-direction: column;
+  justify-content: center;
+  /* Bouton */
+}
+.section1 .section1-container .section1-right > :nth-child(1) {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  transform: translateX(1000px);
+  opacity: 0;
+  animation: moveBoxRight 2s ease forwards;
+  animation-delay: 0.5s;
+  color: whitesmoke;
+}
+.section1 .section1-container .section1-right > :nth-child(2) {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  transform: translateX(1000px);
+  opacity: 0;
+  animation: moveBoxRight 2s ease forwards;
+  animation-delay: 0.5s;
+  color: whitesmoke;
+  animation-delay: 1s;
+}
+.section1 .section1-container .section1-right > button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.1490196078);
+  color: whitesmoke;
+  border-radius: 5px;
+  border: whitesmoke 1px solid;
+  cursor: pointer;
+  margin-top: 15px;
+  transform: translateX(1000px);
+  opacity: 0;
+  animation: moveBoxRight 2s ease forwards;
+  transition: 0.4s;
+}
+.section1 .section1-container .section1-right > button:hover {
+  background: whitesmoke;
+  color: #161616;
+}
+
+/* Animations */
+@keyframes moveBoxRight {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes moveBoxLeft {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=styles.css.map */

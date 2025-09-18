@@ -12,3 +12,26 @@ body {
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
 }
+
+.btnLearn {
+        padding: 10px 15px;
+        font-size: 1rem;
+        text-transform: uppercase;
+        background: #00000026;
+        color: $colorBlanche;
+        border-radius: 5px;
+        border: $colorBlanche 1px solid;
+        cursor: pointer;
+        margin-top: 15px;
+        
+        &:hover {
+          background: $colorBlanche;
+          color: $colorNoir;
+        }
+      
+}
+
+$colorNoir : #161616;
+$colorBlanche: whitesmoke;
+$colorRed:#971010;   
+$colorPink:rgb(255, 90, 90);
